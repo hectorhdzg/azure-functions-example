@@ -1,0 +1,23 @@
+{
+  "name": "azure-functions-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "applicationinsights": "^2.5.0",
+    "axios": "^1.3.0",
+    "bunyan": "^1.8.15",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@azure/functions": "^3.0.0",
+    "@types/node": "16.x",
+    "typescript": "^4.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "eventHubMessages",
+      "direction": "in",
+      "eventHubName": "test",
+      "connection": "hectorheventhub_testManagePolicy_EVENTHUB",
+      "cardinality": "many",
+      "consumerGroup": "$Default",
+      "dataType": "string"
+    }
+  ],
+  "scriptFile": "../dist/EventHubTriggerTest/index.js"
+}
